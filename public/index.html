@@ -1,13 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todos os Itens</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <title>LucasFlix</title>
+    <link rel="shortcut icon" type="image/x-icon" href="icon/icone.ico">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <header>
+        <nav class="menu">
+
+            <div class="menu-esq">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="LucasFlix" class="logo">
+                </a>
+                <a href="#destaques" class="link-menu">Início</a>
+                <a href="#filmes" class="link-menu">Filmes</a>
+                <a href="#sobre" class="link-menu">Sobre</a>
+            </div>
+
+            <input type="search" id="campo-busca" class="pesquisa-menu" placeholder="🔍 Pesquisar filmes...">
+
+            <div class="menu-dir">
+                <button class="btn-cabecalho">Login</button>
+                <button class="btn-cabecalho">Cadastro</button>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section id="destaques">
+            <div class="container-secao">
+                <h2 class="titulo-secao">Em Destaque</h2>
+
+                <div id="area-slider">
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="filmes">
+            <div class="container-secao">
+                <h2 class="titulo-secao">Todos os Filmes</h2>
+
+                <div class="busca-container">
+                    <input type="text" id="campo-busca-filmes" placeholder="🔍 Pesquisar por título...">
+                </div>
+
+                <div id="area-filmes">
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="sobre">
+            <div class="container-secao">
+                <h2 class="titulo-secao">Informações do(a) Aluno(a)</h2>
+
+                <div class="sobre-grid">
+
+                    <div class="sobre-card">
+                        <h3>Sobre</h3>
+                        <p>
+                            O <strong>LucasFlix</strong> é uma plataforma de filmes e séries desenvolvida
+                            como projeto do primeiro semestre do curso de Análise e Desenvolvimento de Sistemas.
+                        </p>
+                        <p>
+                            O site permite navegar por um catálogo de filmes, visualizar um slider com
+                            os títulos em destaque e acessar informações detalhadas de cada filme.
+                        </p>
+                        <p>
+                            Todo o conteúdo é gerado dinamicamente via JavaScript a partir de uma
+                            estrutura de dados JSON.
+                        </p>
+                    </div>
+
+                    <div class="sobre-card">
+                        <h3>Autoria</h3>
+                        <div class="autoria-info">
+                            <img src="img/lucas.jpeg" alt="Foto do aluno" class="foto-aluno"
+                                onerror="this.style.display='none'">
+                            <div class="autoria-texto">
+                                <p><strong>Aluno:</strong> Lucas Stefanon</p>
+                                <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</p>
+                                <p><strong>Turma:</strong> Noite</p>
+                            </div>
+                        </div>
+                        <div class="redes-sociais">
+                            <span>Redes Sociais:</span>
+                            <a href="https://github.com/lucasstefanon" class="link-rede-badge"
+                                target="_blank">GitHub</a>
+                            <a href="https://linkedin.com/in/lucas-stefanon/" class="link-rede-badge linkedin"
+                                target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+
+            <div class="footer-col">
+                <img src="img/logo.png" alt="LucasFlix" class="footer-logo">
+                <p class="footer-desc">
+                    Plataforma de filmes e séries. Projeto acadêmico desenvolvido no 1º semestre.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Links</h3>
+                <a href="#destaques">Início</a>
+                <a href="#filmes">Filmes</a>
+                <a href="#sobre">Sobre</a>
+            </div>
+
+            <div class="footer-col">
+                <h3>Redes</h3>
+                <div class="footer-social">
+                    <a href="https://github.com/lucasstefanon" target="_blank" class="link-rede-badge">GitHub</a>
+                    <a href="https://linkedin.com/in/lucas-stefanon/" target="_blank"
+                        class="link-rede-badge linkedin">LinkedIn</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            Criado por <a href="index.html">LucasFlix</a> &mdash; Projeto Acadêmico
+        </div>
+    </footer>
+
+
+    <script src="app.js"></script>
+
 </body>
+
 </html>
